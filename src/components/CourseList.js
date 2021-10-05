@@ -24,20 +24,6 @@ const CourseList = ({ courses }) => {
     );
 };
 
-const SignInButton = () => (
-    <button className="btn btn-secondary btn-sm"
-        onClick={() => signInWithGoogle()}>
-        Sign In
-    </button>
-);
-
-const SignOuButton = () => (
-    <button className="btn btn-secondary btn-sm"
-        onClick={() => signOut()}>
-        Sign Out
-    </button>
-);
-
 const TermSelector = ({ term, setTerm }) => {
     const [user] = useUserState();
     return (
@@ -62,6 +48,20 @@ const TermButton = ({ term, setTerm, checked }) => (
             {term}
         </label>
     </>
+);
+
+const SignInButton = () => (
+    <button className="btn btn-secondary btn-sm"
+        onClick={() => signInWithGoogle()}>
+        Sign In
+    </button>
+);
+
+const SignOuButton = () => (
+    <button className="btn btn-secondary btn-sm"
+        onClick={() => signOut()}>
+        Sign Out
+    </button>
 );
 
 export default CourseList;
