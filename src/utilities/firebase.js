@@ -3,7 +3,6 @@ import { initializeApp } from 'firebase/app';
 import { getDatabase, onValue, ref, set } from 'firebase/database';
 import { getAuth, GoogleAuthProvider, onIdTokenChanged, signInWithPopup, signOut } from 'firebase/auth';
 const firebaseSignOut = () => signOut(getAuth(firebase));
-
 export { firebaseSignOut as signOut };
 
 
